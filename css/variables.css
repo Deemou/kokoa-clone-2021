@@ -1,5 +1,8 @@
 :root {
-    --yellow: #FAE100;
+    --main-color: rgb(185, 231, 154);
+    --sub-color: rgba(80, 43, 9, 0.8);
+    --nav-color: rgb(143, 96, 75);
+    --green: rgb(40, 92, 5);
     --horizontal-space: 25px;
     --main-border: 1px solid rgba(0, 0, 0, 0.2);
 }

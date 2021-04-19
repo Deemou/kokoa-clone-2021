@@ -1,4 +1,6 @@
 .welcome-header {
+    font-family: 'Original Surfer', cursive;
+    color :var(--sub-color);
     margin: 90px 0px;
     text-align: center;
     display: flex;
@@ -8,50 +10,53 @@
 
 .welcome-header__title {
     margin-bottom: 40px;
-    font-size: 25px;
+    font-size: 28px;
 }
 
 .welcome-header__text {
-    width: 60%;
-    opacity: 0.7;
+    width: 70%;
+    font-size: 18px;
 }
 
-.login-form {
+.login-box {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 0px 30px;
+    align-items: center;
 }
-
+.login-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .login-form__input {
+    background-color: var(--main-color);
+    width: 100%;
     border: none;
     padding: 15px 0px;
     font-size: 18px;
     margin-bottom: 25px;
     border-bottom:2px solid rgba(0, 0, 0, 0.2);
     transition: border-color 0.3s ease-in-out;
+    align-items: center;
 }
-
 .login-form__input::placeholder {
     color: rgba(0, 0, 0, 0.4);
 }
-
-.login-form__input:focus {
-    border-color: var(--yellow);
-    }
-    
-
 .login-form__btn {
-    background-color: var(--yellow);;
+    width: 100%;
+    color: white;
+    background-color: var(--sub-color);
     cursor: pointer;
     padding: 20px 0px;
     border-radius: 5px;
     font-size: 16px;
 }
-
-.login-form__a {
+.login-form__link {
     margin-top: 15px;
     text-align: center;
-    text-decoration: none;
     color: inherit;
     font-size: 15px;
+    font-weight: 600;
 }

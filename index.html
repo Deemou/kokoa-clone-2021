@@ -5,43 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to KokoaTalk</title>
+    <title>Welcome to GameTalker</title>
 
     <!-- Place your kit's code here -->
     <script src="https://kit.fontawesome.com/dfc413c3c3.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-    <div class="status-bar">
-        <div class="status-bar__column">
-            <span>No Service</span>
-            <!--To Do: Wifi Icon-->
-            <i class="fas fa-wifi"></i>
-            
+    <div class="whole-box">
+        <div class="status-bar">
+            <div class="status-bar__column">
+                <span>GameFi</span>
+                <i class="fas fa-wifi"></i>
+            </div>
+            <div class="status-bar__column">
+                <span>18:43</span>
+            </div>
+            <div class="status-bar__column">
+            <span>110%</span>
+                <!-- Battery Icon-->
+                <i class="fas fa-battery-full fa-lg"></i>
+                <!-- Lightning Icon-->
+                <i class="fas fa-bolt"></i>
+            </div>
         </div>
-        <div class="status-bar__column">
-            <span>18:43</span>
-        </div>
-        <div class="status-bar__column">
-        <span>110%</span>
-            <!-- Battery Icon-->
-            <i class="fas fa-battery-full fa-lg"></i>
-            <!-- Lightning Icon-->
-            <i class="fas fa-bolt"></i>
+    
+        <header class="welcome-header">
+            <h1 class="welcome-header__title">GameTalker</h1>
+            <p class="welcome-header__text">If you have a GameTalker Account,<br>log in with your email.</p>
+        </header>
+        
+        <div class="login-box">
+            <form action="friends.html" method="GET" class="login-form">
+                <input class="login-form__input" type="email" placeholder="Email" required>
+                <input class="login-form__input" type="password" placeholder="Password" minlength="10" maxlength="16" required>
+                <input class="login-form__btn" type="submit" value="Log In">
+                <a class="login-form__link" href="#">Forgot Your Account or Password?</a>
+            </form>
         </div>
     </div>
+    
 
-    <header class="welcome-header">
-        <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
-        <p class="welcome-header__text">If you have a Kokoa Account, log in with your email or phone number.</p>
-    </header>
-
-    <form action="friends.html" method="GET" class="login-form">
-        <input class="login-form__input" type="username" placeholder="Email or phone number">
-        <input class="login-form__input" type="password" placeholder="Password">
-        <input class="login-form__btn" type="submit" value="Log In">
-        <a class="login-form__a" href="#">Find Kokoa Account or Password</a>
-    </form>
     <div class="no-mobile">
         <span>Sorry!</span><br>
         <span>Your screen is too big!</span>

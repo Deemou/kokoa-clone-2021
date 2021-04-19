@@ -5,83 +5,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chats - KokoaTalk</title>
+    <title>Chats - GameTalker</title>
 
     <!-- Place your kit's code here -->
     <script src="https://kit.fontawesome.com/dfc413c3c3.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-    <div class="status-bar">
-        <div class="status-bar__column">
-            <span>No Service</span>
-            <!--To Do: Wifi Icon-->
-            <i class="fas fa-wifi"></i>
-            
+    <div class="whole-box">
+        <div class="status-bar">
+            <div class="status-bar__column">
+                <span>GameFi</span>
+                <i class="fas fa-wifi"></i>
+            </div>
+            <div class="status-bar__column">
+                <span>21:45</span>
+            </div>
+            <div class="status-bar__column">
+            <span>110%</span>
+                <!-- Battery Icon-->
+                <i class="fas fa-battery-full fa-lg"></i>
+                <!-- Lightning Icon-->
+                <i class="fas fa-bolt"></i>
+            </div>
         </div>
-        <div class="status-bar__column">
-            <span>18:43</span>
-        </div>
-        <div class="status-bar__column">
-        <span>110%</span>
-            <!-- Battery Icon-->
-            <i class="fas fa-battery-full fa-lg"></i>
-            <!-- Lightning Icon-->
-            <i class="fas fa-bolt"></i>
-        </div>
+    
+        <header class="screen-header">
+            <h1 class="screen-header__title">Chats</h1>
+            <div class="screen-header__icons">
+                <span><i class="fas fa-search fa-2x"></i></span>
+                <span><i class="far fa-comment-dots fa-2x"></i></span>
+                <span><i class="fas fa-music fa-2x"></i></span>
+                <span><i class="fas fa-cog fa-2x"></i></span>
+            </div>
+        </header>
+    
+        <main class="main-screen chats">
+            <a href="chat-paul.html">
+                <div class="user-component">
+                    <div class="user-component__row">
+                        <div class="user-component__left">
+                            <img src="image/waterboy.png" class="user-component__profile-image" />
+                            <div class="user-component__text">
+                                <span class="user-component__name">Falling Paul</span>
+                                <span class="user-component__message">pleeeeeease!!</span>
+                            </div>
+                        </div>
+                        <div class="user-component__right">
+                            <span class="user-component__time">21:39</span>
+                            <div class="badge">3</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="chat-reaper.html">
+                <div class="user-component">
+                    <div class="user-component__row">
+                        <div class="user-component__left">
+                            <img src="image/reaper.jpg" class="user-component__profile-image" />
+                            <div class="user-component__text">
+                                <span class="user-component__name">Sweet Reaper</span>
+                                <span class="user-component__message">See u!</span>
+                            </div>
+                        </div>
+                        <div class="user-component__right">
+                            <span class="user-component__time">13:47</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="chat-knight.html">
+                <div class="user-component">
+                    <div class="user-component__row">
+                        <div class="user-component__left">
+                            <img src="image/chess_knight.png" class="user-component__profile-image" />
+                            <div class="user-component__text">
+                                <span class="user-component__name">Black Knight</span>
+                                <span class="user-component__message">Ok</span>
+                            </div>
+                        </div>
+                        <div class="user-component__right">
+                            <span class="user-component__time">Yesterday</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="chat-joker.html">
+                <div class="user-component">
+                    <div class="user-component__row">
+                        <div class="user-component__left">
+                            <img src="image/joker.png" class="user-component__profile-image" />
+                            <div class="user-component__text">
+                                <span class="user-component__name">Honest Joker</span>
+                                <span class="user-component__message">(☞ﾟヮﾟ)☞</span>
+                            </div>
+                        </div>
+                        <div class="user-component__right">
+                            <span class="user-component__time">4/17/2021</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </main>
+    
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__btn">
+                    <a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a>
+                </li>
+                <li class="nav__btn">
+                    <a class="nav__link" href="chats.html">
+                        <span class="nav__notification badge">3</span>
+                        <i class="fas fa-comment fa-2x"></i>
+                    </a>
+                </li>
+                <li class="nav__btn">
+                    <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a>
+                </li>
+                <li class="nav__btn">
+                    <a class="nav__link" href="more.html">
+                        <span class="nav__notification-more"></span>
+                        <i class="fas fa-ellipsis-h fa-2x"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </div>
 
-    <header class="screen-header">
-        <h1 class="screen-header__title">Chats</h1>
-        <div class="screen-header__icons">
-            <span><i class="fas fa-search fa-2x"></i></span>
-            <span><i class="far fa-comment-dots fa-2x"></i></span>
-            <span><i class="fas fa-music fa-2x"></i></span>
-            <span><i class="fas fa-cog fa-2x"></i></span>
-        </div>
-    </header>
-
-    <main class="main-screen">
-        <a href="chat.html">
-            <div class="user-component">
-            <div class="user-component__column">
-                <img src="image/iconfinder_Vampire_6954593.png" class="user-component__profile-image" />
-                <div class="user-component__text">
-                    <h4 class="user-component__title">Deemou</h4>
-                    <h6 class="user-component__subtitle">Please Check My Kokoa Account</h6>
-                </div>
-            </div>
-            <div class="user-component__column">
-                <span class="user-component__time">21:22</span>
-                <div class="badge">1</div>
-            </div>
-            </div>
-        </a>
-    </main>
-
-
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__btn">
-                <a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a>
-            </li>
-            <li class="nav__btn">
-                <a class="nav__link" href="chats.html">
-                    <span class="nav__notification badge">1</span>
-                    <i class="fas fa-comment fa-2x"></i>
-                </a>
-            </li>
-            <li class="nav__btn">
-                <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a>
-            </li>
-            <li class="nav__btn">
-                <a class="nav__link" href="more.html">
-                    <span class="nav__notification-more"></span>
-                    <i class="fas fa-ellipsis-h fa-2x"></i>
-                </a>
-            </li>
-        </ul>
-    </nav>
     <div class="no-mobile">
         <span>Sorry!</span><br>
         <span>Your screen is too big!</span>
